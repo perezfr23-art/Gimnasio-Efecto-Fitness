@@ -248,6 +248,94 @@ main > section figure figcaption {
   text-align: center;
   padding: 10px 0;
 }
+/* cards */
+.services-page {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+
+.service-intro {
+  background: rgba(245, 244, 240, 0.08);
+  border: 1px solid rgba(255, 60, 39, 0.25);
+  border-radius: 18px;
+  padding: 1.25rem;
+}
+
+.service-intro h1 {
+  color: #ff3c27;
+  margin-bottom: 0.7rem;
+}
+
+.service-intro .lead {
+  color: #f5f4f0;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.service-figure {
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-figure img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px 18px 0 0;
+}
+
+.service-figure figcaption {
+  background-color: #0a0a0a;
+  color: #f5f4f0;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.service-card {
+  background: linear-gradient(145deg, #f5f4f0, #e8e4dc);
+  border: 2px solid #ff3c27;
+  border-radius: 16px;
+  color: #0a0a0a;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .card-title {
+  color: #ff3c27;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+
+.service-card .card-text {
+  color: #0a0a0a;
+  font-size: 0.95rem;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .service-intro {
+    padding: 1.5rem;
+  }
+
+  .service-figure {
+    max-width: 100%;
+  }
+
+  .service-figure img {
+    height: 320px;
+  }
+}
 
 .gallery-section {
   margin-top: 1.5rem;
