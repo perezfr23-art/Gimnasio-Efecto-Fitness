@@ -248,6 +248,21 @@ main > section figure figcaption {
   text-align: center;
   padding: 10px 0;
 }
+
+.contact-image {
+  width: min(100%, 320px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (min-width: 600px) {
+  .contact-image {
+    width: min(100%, 380px);
+  }
+}
 /* cards */
 .services-page {
   display: block;
