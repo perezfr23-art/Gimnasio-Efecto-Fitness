@@ -303,16 +303,42 @@ main > section figure figcaption {
 }
 
 .service-card {
-  background: linear-gradient(145deg, #f5f4f0, #e8e4dc);
-  border: 2px solid #ff3c27;
-  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(245, 244, 240, 0.98), rgba(232, 228, 220, 0.95));
+  border: 1px solid rgba(255, 60, 39, 0.25);
+  border-radius: 20px;
   color: #0a0a0a;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 60, 39, 0.1), transparent 60%);
+  pointer-events: none;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+  border-color: #ff3c27;
+}
+
+.service-card .card-body {
+  position: relative;
+  z-index: 1;
+  padding: 1.25rem;
 }
 
 .service-card .card-title {
   color: #ff3c27;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
   margin-bottom: 0.75rem;
   padding: 0;
 }
@@ -320,7 +346,9 @@ main > section figure figcaption {
 .service-card .card-text {
   color: #0a0a0a;
   font-size: 0.95rem;
+  line-height: 1.7;
   padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
