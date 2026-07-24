@@ -662,8 +662,6 @@ h6 {
   object-fit: cover;
 }
 
-
-
 /* Tablet: 3 columnas con nos-6 a la derecha */
 @media (min-width: 600px) {
   .img-nos {
