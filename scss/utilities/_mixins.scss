@@ -1,0 +1,23 @@
+﻿@use "variables" as *;
+
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin card-surface($background, $border-color: $color-primary) {
+  background: $background;
+  border: 1px solid rgba($border-color, 0.25);
+  border-radius: $radius-xl;
+}
+
+@mixin hover-lift {
+  transition: transform $transition-smooth, box-shadow $transition-smooth, border-color $transition-smooth;
+
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: $shadow-lg;
+    border-color: $color-primary;
+  }
+}

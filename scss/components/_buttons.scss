@@ -1,0 +1,17 @@
+﻿@use "../utilities/variables" as *;
+
+.btn,
+button {
+  border: none;
+  border-radius: $radius-sm;
+  background-color: $color-primary;
+  color: $color-dark;
+  padding: 0.6rem 1rem;
+  transition: background-color $transition-base, color $transition-base;
+
+  &:hover,
+  &:focus {
+    background-color: $color-light;
+    color: $color-primary;
+  }
+}
