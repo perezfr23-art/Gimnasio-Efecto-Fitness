@@ -124,6 +124,10 @@ main article {
   display: grid;
   margin-bottom: 0;
 }
+main article figure {
+  width: min(100%, 520px);
+  margin: 0 auto;
+}
 main > h2 {
   grid-area: "titulo";
   text-align: center;
@@ -145,14 +149,17 @@ main > section {
   margin-bottom: 0;
 }
 main > section figure {
-  width: 100%;
-  margin: 0;
+  width: min(100%, 520px);
+  margin: 0 auto;
 }
-main > section figure img {
+main > section figure img,
+main article figure img {
   width: 100%;
+  max-width: 520px;
   height: auto;
   object-fit: cover;
-  display: grid;
+  display: block;
+  margin: 0 auto;
 }
 main > section figure figcaption {
   text-align: center;
