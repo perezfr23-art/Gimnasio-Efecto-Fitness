@@ -200,10 +200,31 @@ p a {
   margin: 0 auto;
   object-fit: cover;
   border-radius: 16px;
+  animation: floatImage 3s ease-in-out infinite, glowImage 3s ease-in-out infinite;
+  box-shadow: 0 8px 20px rgba(255, 60, 39, 0.3);
 }
 @media (min-width: 600px) {
   .contact-image {
     width: min(100%, 380px);
+  }
+}
+
+/* Animaciones para la imagen de contacto */
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes glowImage {
+  0%, 100% {
+    box-shadow: 0 8px 20px rgba(255, 60, 39, 0.3), 0 0 20px rgba(255, 60, 39, 0.2);
+  }
+  50% {
+    box-shadow: 0 12px 30px rgba(255, 60, 39, 0.5), 0 0 30px rgba(255, 60, 39, 0.4);
   }
 }
 
