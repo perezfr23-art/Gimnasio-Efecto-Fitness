@@ -202,9 +202,29 @@ p a {
   margin: 0 auto;
   object-fit: cover;
   border-radius: $radius-lg;
+  animation: contactoImagen 4s ease-in-out infinite;
 
   @include respond-to($bp-sm) {
     width: min(100%, 380px);
+  }
+}
+
+@keyframes contactoImagen {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 rgba($color-primary, 0);
+  }
+
+  50% {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba($color-primary, 0.3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-image {
+    animation: none;
   }
 }
 
