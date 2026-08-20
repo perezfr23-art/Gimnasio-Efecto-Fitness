@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <!-- BOOTSTRAP -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS -->
     <title>Nuestras instalaciones</title>
     <link rel="stylesheet" href="../css/main.css" />
@@ -52,7 +53,7 @@
     </header>
     <!-- contenido principal -->
     <main>
-      <div class="grid-nos">
+      <div class="grid-nos" data-aos="fade-up" data-aos-duration="800">
         <img src="../assets/nos-1.jpeg" alt="Entrenamiento en Efecto Fitness" class="img-nos" />
         <img src="../assets/nos-2.jpeg" alt="Ejercicio funcional" class="img-nos" />
         <img src="../assets/nos-3.png" alt="Entrenamiento personalizado" class="img-nos" />
@@ -88,5 +89,9 @@
     </footer>
     <!-- BOOSTRAP -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
   </body>
 </html>
