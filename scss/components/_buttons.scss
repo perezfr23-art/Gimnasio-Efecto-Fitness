@@ -1,4 +1,5 @@
 ﻿@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .btn,
 button {
@@ -13,5 +14,9 @@ button {
   &:focus {
     background-color: $color-light;
     color: $color-primary;
+  }
+
+  &:focus-visible {
+    @extend %focus-outline;
   }
 }

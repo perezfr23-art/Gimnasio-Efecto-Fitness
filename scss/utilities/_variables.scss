@@ -22,3 +22,8 @@ $transition-smooth: 0.25s ease;
 $bp-sm: 600px;
 $bp-md: 768px;
 $bp-lg: 1024px;
+
+%focus-outline {
+	outline: 3px solid rgba($color-primary, 0.55);
+	outline-offset: 3px;
+}
