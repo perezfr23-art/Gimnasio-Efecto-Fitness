@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+.btn:focus-visible,
+button:focus-visible, a:focus-visible {
+  outline: 3px solid rgba(255, 60, 39, 0.55);
+  outline-offset: 3px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -107,6 +113,7 @@ main {
   color: #f5f4f0;
   grid-template-columns: 1fr;
   grid-template-areas: "titulo" "contenido";
+  overflow: hidden;
 }
 @media (min-width: 600px) {
   main {
@@ -123,10 +130,6 @@ main {
 main article {
   display: grid;
   margin-bottom: 0;
-}
-main article figure {
-  width: min(100%, 520px);
-  margin: 0 auto;
 }
 main > h2 {
   grid-area: "titulo";
@@ -152,14 +155,11 @@ main > section figure {
   width: min(100%, 520px);
   margin: 0 auto;
 }
-main > section figure img,
-main article figure img {
+main > section figure img {
   width: 100%;
-  max-width: 520px;
   height: auto;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
 }
 main > section figure figcaption {
   text-align: center;
@@ -207,6 +207,7 @@ p a {
     width: min(100%, 380px);
   }
 }
+
 @keyframes contactoImagen {
   0%, 100% {
     transform: translateY(0) scale(1);
@@ -222,7 +223,6 @@ p a {
     animation: none;
   }
 }
-
 .container-nav {
   width: 100%;
   display: flex;
@@ -298,7 +298,7 @@ p a {
 
 .img-nos,
 .img-nos-vert {
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   cursor: pointer;
@@ -325,8 +325,9 @@ p a {
 }
 @media (min-width: 600px) {
   .img-nos-vert {
-    width: 20vw;
-    height: 120vh;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
   }
 }
 
@@ -507,6 +508,10 @@ footer {
   font-size: 0.85rem;
   transition: background-color 0.3s ease;
 }
+.social-links a:hover {
+  background-color: #f5f4f0;
+}
+
 .footer-divider {
   border-top: 2px solid #ff3c27;
   margin: 20px 0;
@@ -551,7 +556,6 @@ button:focus {
   background-color: #f5f4f0;
   color: #ff3c27;
 }
-
 .services-page {
   display: block;
   max-width: 1200px;
