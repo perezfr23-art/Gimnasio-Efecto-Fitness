@@ -7,6 +7,10 @@ El objetivo principal del sitio es brindar información sobre el gimnasio, mostr
 
 La página fue desarrollada como parte de un proyecto personal para poner en práctica conocimientos de desarrollo web y diseño de sitios responsivos.
 
+🌐 **Demo online**
+
+Podés visitar el sitio publicado en Vercel: https://gimnasio-efecto-fitness.vercel.app/
+
 🌐 Secciones del sitio
 
 El sitio web cuenta con las siguientes secciones:
